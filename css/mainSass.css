@@ -1,0 +1,139 @@
+/* set the width and height of your scrollbar */
+::-webkit-scrollbar {
+  width: 15px;
+  height: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.5882352941);
+}
+
+/*style the thumb of your scrollbar*/
+::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+}
+
+/* Customizing The CSS file */
+* {
+  font-family: "Inconsolata", monospace;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+*:focus {
+  outline: none;
+}
+
+body {
+  font-family: "Roboto", serif;
+  background-color: #aaa;
+}
+
+/* Main wrapper Styles */
+.main-wrapper {
+  width: 90%;
+  max-width: 25rem;
+  background-color: rgba(255, 255, 255, 0.5882352941);
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  border-radius: 0.8rem;
+  padding: 2rem;
+}
+.main-wrapper .app-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-bottom: 2px solid #222;
+}
+.main-wrapper .app-details .app-icon {
+  width: 9.37rem;
+}
+.main-wrapper .app-details .app-title {
+  font-weight: bold;
+}
+.main-wrapper .amount {
+  margin-top: 2.2rem;
+}
+.main-wrapper .amount label {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.main-wrapper .amount #amount {
+  width: 65%;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.768627451);
+  background-color: transparent;
+  font-size: 1.2rem;
+  color: #222;
+  margin-bottom: 1.5rem;
+  padding: 0.4rem;
+}
+.main-wrapper .amount #amount:focus {
+  font-size: 1.1rem;
+  color: #888;
+  border-bottom: 2px solid #888;
+}
+.main-wrapper .select-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+.main-wrapper .select-area select {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.768627451);
+  color: #222;
+  border-radius: 0.7rem;
+}
+.main-wrapper .result-area #convert {
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.8rem;
+  border-radius: 0.7rem;
+  background-color: rgba(255, 255, 255, 0.768627451);
+  color: #222;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.main-wrapper .result-area #convert:hover {
+  background-color: rgba(255, 255, 255, 0.3215686275);
+}
+.main-wrapper .result-area #result {
+  margin-top: 1rem;
+  background-color: rgba(255, 255, 255, 0.2784313725);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: #222;
+  font-size: 1.2rem;
+  text-align: center;
+  display: none;
+}
+
+/*// Main wrapper Styles //*/

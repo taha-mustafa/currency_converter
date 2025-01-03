@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <!--// Google Fonts //-->
+  <!-- CSS style file -->
+  <link rel="stylesheet" href="css/mainSass.css">
+  <!--// CSS style file //-->
+</head>
+<body>
+  
+  <!-- Main Element -->
+  <main class="main-wrapper">
+    <header class="app-details">
+      <img src="images/currency-exchange-svgrepo-com.svg" alt="Currency Converter icon" class="app-icon">
+      <h1 class="app-title">Currency Converter</h1>
+    </header>
+    <section class="amount">
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" value="">
+    </section>
+    <section class="select-area">
+      <select id="from-currency"></select>
+      <select id="to-currency"></select>
+    </section>
+    <section class="result-area">
+      <button id="convert">Convert</button>
+      <p id="result"></p>
+    </section>
+  </main>
+  <!--// Main Element //-->
+
+  <!-- Currency Codes -->
+  <script src="js/currency-codes.js"></script>
+  <!--// Currency Codes //-->
+  <!-- Project api key -->
+  <script src="js/api-key.js"></script>
+  <!--// Project api key //-->
+  <!-- Js file -->
+  <script src="js/script.js"></script>
+  <!--// Js file //-->
+</body>
+</html>

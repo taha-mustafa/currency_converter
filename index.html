@@ -17,31 +17,43 @@
   
   <!-- Main Element -->
   <main class="main-wrapper">
+    <!-- App Header -->
     <header class="app-details">
       <img src="images/currency-exchange-svgrepo-com.svg" alt="Currency Converter icon" class="app-icon">
       <h1 class="app-title">Currency Converter</h1>
     </header>
-    <section class="amount">
-      <label for="amount">Amount:</label>
+      <!--// App Header //-->
+      <!-- Amount Section -->
+      <section class="amount">
+        <label for="amount">Amount:</label>
       <input type="number" id="amount" value="">
     </section>
+    <!--// Amount Section //-->
+    <!-- Selection Section -->
     <section class="select-area">
       <select id="from-currency"></select>
       <select id="to-currency"></select>
     </section>
+    <!--// Selection Section //-->
+    <!-- Result Section -->
     <section class="result-area">
       <button id="convert">Convert</button>
       <p id="result"></p>
     </section>
+    <!--// Result Section //-->
   </main>
   <!--// Main Element //-->
 
+  <!-- <<<<<<<<<<<<< Javascript Files >>>>>>>>> -->
   <!-- Currency Codes -->
   <script src="js/currency-codes.js"></script>
   <!--// Currency Codes //-->
   <!-- Project api key -->
   <script src="js/api-key.js"></script>
   <!--// Project api key //-->
+  <!-- Sweet Alert Library -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!--// Sweet Alert Library //-->
   <!-- Js file -->
   <script src="js/script.js"></script>
   <!--// Js file //-->
